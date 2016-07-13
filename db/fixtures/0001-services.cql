@@ -6,7 +6,7 @@ VALUES (
   0.2, 256, 1,
   null, null,
   '',
-  dateof(now()), dateof(now())
+  toTimestamp(now()), toTimestamp(now())
 );
 
 INSERT INTO testdatabase.testtable1 (uuid,type,image,cpus,memory,instances,env,labels,healthcheck,created_at,updated_at)
@@ -17,5 +17,5 @@ VALUES (
   0.2, 256, 1,
   null, null,
   '',
-  dateof(now()), dateof(now())
+  toTimestamp(now()), toTimestamp(now())
 );
